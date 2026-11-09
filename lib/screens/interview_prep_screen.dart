@@ -58,7 +58,7 @@ class _InterviewPrepScreenState
     try {
       final response = await http.post(
         Uri.parse(
-          'http://127.0.0.1:8000/interview/questions',
+          'https://nexora-v0ex.onrender.com/interview/questions',
         ),
         headers: {
           'Content-Type': 'application/json',
@@ -136,7 +136,7 @@ class _InterviewPrepScreenState
     try {
       final response = await http.post(
         Uri.parse(
-          'http://127.0.0.1:8000/interview/evaluate',
+          'https://nexora-v0ex.onrender.com/interview/evaluate',
         ),
         headers: {
           'Content-Type': 'application/json',

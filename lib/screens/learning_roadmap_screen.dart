@@ -40,7 +40,7 @@ class _LearningRoadmapScreenState extends State<LearningRoadmapScreen> {
 
     try {
       final response = await http.post(
-        Uri.parse('http://127.0.0.1:8000/generate-roadmap'),
+        Uri.parse('https://nexora-v0ex.onrender.com/generate-roadmap'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({
           'skills': widget.skills,

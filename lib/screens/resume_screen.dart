@@ -119,7 +119,7 @@ class _ResumeScreenState extends State<ResumeScreen> {
 
       final request = http.MultipartRequest(
         'POST',
-        Uri.parse('http://127.0.0.1:8000/analyze-resume'),
+        Uri.parse('https://nexora-v0ex.onrender.com/analyze-resume'),
       );
 
       request.files.add(

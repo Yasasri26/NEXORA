@@ -44,7 +44,7 @@ class _SkillGapScreenState extends State<SkillGapScreen> {
 
     try {
       final response = await http.post(
-        Uri.parse('http://127.0.0.1:8000/analyze-skill-gap'),
+        Uri.parse('https://nexora-v0ex.onrender.com/analyze-skill-gap'),
         headers: {
           'Content-Type': 'application/json',
         },

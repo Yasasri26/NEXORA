@@ -19,7 +19,7 @@ class _JobMatchingScreenState extends State<JobMatchingScreen> {
   Future<void> findJobs() async {
     setState(() { loading = true; error = null; });
     try {
-      final response = await http.post(Uri.parse('http://127.0.0.1:8000/match-jobs'), headers: {'Content-Type': 'application/json'}, body: jsonEncode({'skills': widget.skills, 'target_role': role}));
+      final response = await http.post(Uri.parse('https://nexora-v0ex.onrender.com/match-jobs'), headers: {'Content-Type': 'application/json'}, body: jsonEncode({'skills': widget.skills, 'target_role': role}));
       final data = jsonDecode(response.body);
       if (response.statusCode != 200) throw Exception(data['detail'] ?? 'Unable to match jobs');
       setState(() => jobs = data['jobs'] ?? []);
